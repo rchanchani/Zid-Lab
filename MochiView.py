@@ -1,7 +1,7 @@
 import os
 def MochiView(path)
 	file1 = open(path,'r')
-	output = open('D:/ZidData/OSheaLab/MochiView/5Pp35_comb_Mochi.txt', 'w')
+	output = open('/home/rchancha/Bowtie/bowtie/MochiView/5Pp35_comb_Mochi.txt', 'w')
 	output.write('SEQ_NAME\tSTART\tEND\tSTRAND\tCOUNT\n')
 	#temp7 = file1.readline()
 	norm = 2.65 # Normalized to total alignable reads/3 million
@@ -23,7 +23,7 @@ def MochiView(path)
         	Start = str(PositTemp)
         
     	output.write(name+'\t'+Start+'\t'+Start+'\t'+Orien+'\t'+str(count)+ '\n')  #antisense count
-	outputpath = 'D:/ZidData/OSheaLab/MochiView/5Pp35_comb_Mochi.txt'
+	outputpath = '/home/rchancha/Bowtie/bowtie/MochiView/5Pp35_comb_Mochi.txt'
 	output.close()
 	file1.close()
 	return outputpath

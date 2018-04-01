@@ -3,8 +3,8 @@ import sys
 from operator import itemgetter
 
 def countSorted(path): 
-	file1 = open('C:/Zid/SolexaDataAnalysis/EYp35Timecourse/1Pp35Feat.txt','r')
-	output = open('C:/Zid/SolexaDataAnalysis/EYp35Timecourse/1Pp35Sorted.txt','w')
+	file1 = open(path,'r')
+	output = open('/home/rchancha/Bowtie/bowtie/count/1Pp35Sorted.txt','w')
 	temp = file1.readline()
 	line1 = temp.rstrip() 
 	temp1 = line1.split('\t')
@@ -115,6 +115,6 @@ def countSorted(path):
                     					CountS = CountS + tCount
                 				elif End + 200 > Posit:
                     					CountE = CountE + tCount
-	outputpath = 'C:/Zid/SolexaDataAnalysis/EYp35Timecourse/1Pp35Counted.txt'
+	outputpath = '/home/rchancha/Bowtie/bowtie/count/1Pp35Sorted.txt'
 	output.close()
 	return outputpath

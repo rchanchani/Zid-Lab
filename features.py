@@ -1,6 +1,6 @@
 def features(path, input):
 	file1 = open(path,'r')
-	output = open('C:/Users/Brian/OneDrive/ZidLab/Data/Solexa/RNA3Feat.txt', 'w')
+	output = open('/home/rchancha/Bowtie/bowtie/Features/RNA3Feat.txt', 'w')
 	AlignCountTotal = 0.0
 
 	for line in file1:
@@ -82,7 +82,7 @@ def features(path, input):
                         				output.write(name+'\t'+str(tStrt2)+'\t'+str(tEnd2)+'\t'+str(Posit)+ '\t'+count+'\n') #sense count
                 				        AlignCountTotal = AlignCountTotal + float(count)
 		file2.close()
-	outputpath = 'C:/Users/Brian/OneDrive/ZidLab/Data/Solexa/RNA3Feat.txt'
+	outputpath = '/home/rchancha/Bowtie/bowtie/Features/RNA3Feat.txt'
 	print AlignCountTotal
 	output.close()
 	return outputpath

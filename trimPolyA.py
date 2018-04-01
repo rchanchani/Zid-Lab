@@ -1,7 +1,7 @@
 import os
 def trimPolyA(path)
 	file1 = open(path)
-	output = open('D:/Bowtie/bowtie-1.1.2/BY-Ribo_-Glu15_Replicate2.fastq' , 'w')
+	output = open('/home/rchancha/Bowtie/bowtie/Mpas/BY-Ribo_-Glu15_Replicate2.fastq' , 'w')
 	count = 0
 	count1 = 0
 	count2 = 0
@@ -53,7 +53,7 @@ def trimPolyA(path)
                 
 	output.close()
 	#ouputPath = os.abspath()
-	outputPath = 'D:/Bowtie/bowtie-1.1.2/BY-Ribo_-Glu15_Replicate2.fastq'
+	outputPath = '/home/rchancha/Bowtie/bowtie/Mpas/BY-Ribo_-Glu15_Replicate2.fastq'
 	print count
 	print count1
 	print count2

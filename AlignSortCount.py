@@ -1,6 +1,6 @@
 def AlignSortCount(path, input):
 	file1 = open(path,'r')
-	output = open('C:/Zid/SolexaDataAnalysis/EYp35Timecourse/3Pp35Feat.txt', 'w')
+	output = open('/home/rchancha/Bowtie/bowtie/AlignedSortedCount/3Pp35Feat.txt', 'w')
 	AlignCountTotal = 0.0
 
 	for line in file1:
@@ -82,7 +82,7 @@ def AlignSortCount(path, input):
                         			AlignCountTotal = AlignCountTotal + float(count)
     	file2.close()
 	print AlignCountTotal
-	outputpath = 'C:/Zid/SolexaDataAnalysis/EYp35Timecourse/3Pp35Feat.txt'
+	outputpath = '/home/rchancha/Bowtie/bowtie/AlignedSortedCount/3Pp35Feat.txt'
 	output.close()
 	return outputpath
 	
