@@ -32,6 +32,7 @@ map='/aligned.map'
 alignSortDir='/AlignedSorted'
 mochiDir='/MochiView'
 featDir='/Feature'
+sortedGeneDir='/SortedFiles'
 
 # Create bowtie argument filepaths
 arg1=$dest$rdnaDir
@@ -79,6 +80,7 @@ do
 
       # Sort gene features
       echo $dest$sortedGeneDir
+      echo "Which file would you like to generate a Feature .txt file for?" read sorttInput
       /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/sortFiles.py $sortInput
       # Count gene features, generate Excel file, and perform basic data analysis
       echo $dest$countSortDir
