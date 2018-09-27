@@ -64,24 +64,24 @@ do
       # Create directory to store aligned and sorted .txt file using aligned .map input
       mkdir -p $dest$alignSortDir
       echo $dest$alignSortDir
-      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/AlignSortCount.py $arg6 $arg5
+      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/AlignSortCount.py $input $arg6 $arg5
 
       # Create and store MochiView files using ___ input
       mkdir -p $dest$mochiDir
       echo $dest$mochiDir
       echo "Which file would you like to generate a MochiView .txt file for?" read mochiInput
-      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/MochiView.py $mochiInput
+      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/MochiView.py $dest$mochiDir $mochiInput
 
       # Create and store Feat.txt to see gene features
       mkdir -p $dest$featDir
       echo $dest$featDir
       echo "Which file would you like to generate a Feature .txt file for?" read featInput
-      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/.py $featInput
+      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/.py $dest$featDir $featInput
 
       # Sort gene features
       echo $dest$sortedGeneDir
-      echo "Which file would you like to generate a Feature .txt file for?" read sorttInput
-      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/sortFiles.py $sortInput
+      echo "Which file would you like to generate a Feature .txt file for?" read sortInput
+      /opt/python/bin/python3.4 /home/rchancha/Bowtie/bowtie/Zid-Lab-Pipeline-master/Inputs/sortFiles.py $dest$sortedGeneDir $sortInput
       # Count gene features, generate Excel file, and perform basic data analysis
       echo $dest$countSortDir
       read -p 'What would you like to name the Excel sheet? ' sheetName
