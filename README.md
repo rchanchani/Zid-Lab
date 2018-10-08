@@ -1,4 +1,4 @@
-# Zid-Lab
+# Zid Lab
 ### Ribosome Occupancy Model
 _Author: Raghav Chanchani_
   A tunable ribosome occupancy model that takes in initiation rate, elongation rate, time length of the simulation, number of ribosomes per mRNA, and the number of mRNA. This is in addition to a .txt file of the mRNA sequence of the gene of interest and the probability of moving forward in an initiation or elongation step. Probabilities of moving between any two codons are assumed to be equal. Once a ribosome reaches the end of an mRNA and moves past the gene's length, it is recycled to the -1 index which represents a location in the cell from which ribosomes can readily reattach to the mRNA of interest. The 0 index is assumed to be the AUG codon. The model does not consider the codons specific to the gene of interest, only its length.
