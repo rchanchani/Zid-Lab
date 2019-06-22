@@ -1,4 +1,4 @@
-# Zid Lab
+# Zid Lab (development shifted to private repo)
 ### Ribosome Occupancy Model
 _Author: Raghav Chanchani_
 
